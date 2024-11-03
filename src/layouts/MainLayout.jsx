@@ -6,15 +6,15 @@ const MainLayout = () => {
     return (
         <div>
             {/* Navbar */}
-            <div className="px-8 py-2">
+            <div className="px-8 pt-4">
             <Navbar></Navbar>
             </div >
             {/* Dynamic Content */}
-            <div className="min-h-[calc(100vh-300px)] ">
+            <div className="min-h-[calc(500vh-300px)] ">
                 <Outlet></Outlet>
             </div>
             {/* Footer */}
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
     );
 };
