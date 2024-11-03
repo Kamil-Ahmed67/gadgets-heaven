@@ -14,7 +14,7 @@ const MainLayout = () => {
                 <Outlet></Outlet>
             </div>
             {/* Footer */}
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </div>
     );
 };

@@ -1,0 +1,223 @@
+[
+    {
+      "product_id": "LAP001",
+      "product_title": "Dell XPS 13",
+      "product_image": "https://example.com/images/dell_xps_13.jpg",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "Powerful ultrabook with a stunning display and long battery life.",
+      "Specification": ["13.4-inch FHD+", "Intel i7", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "LAP002",
+      "product_title": "Apple MacBook Pro 14",
+      "product_image": "https://example.com/images/macbook_pro_14.jpg",
+      "category": "MacBook",
+      "price": 1999.99,
+      "description": "Professional-grade performance with the M1 Pro chip.",
+      "Specification": ["14-inch Retina", "Apple M1 Pro", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "LAP003",
+      "product_title": "HP Spectre x360",
+      "product_image": "https://example.com/images/hp_spectre_x360.jpg",
+      "category": "Laptop",
+      "price": 1499.99,
+      "description": "2-in-1 convertible laptop with premium build and AMOLED display.",
+      "Specification": ["13.5-inch AMOLED", "Intel i7", "16GB RAM", "1TB SSD"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "PH001",
+      "product_title": "iPhone 13 Pro",
+      "product_image": "https://example.com/images/iphone_13_pro.jpg",
+      "category": "iPhone",
+      "price": 999.99,
+      "description": "High-performance smartphone with A15 Bionic chip.",
+      "Specification": ["6.1-inch OLED", "A15 Bionic", "128GB Storage", "5G"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "PH002",
+      "product_title": "Samsung Galaxy S21",
+      "product_image": "https://example.com/images/galaxy_s21.jpg",
+      "category": "Phone",
+      "price": 799.99,
+      "description": "Flagship Android phone with a stunning display and powerful camera.",
+      "Specification": ["6.2-inch AMOLED", "Snapdragon 888", "128GB Storage", "5G"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "PH003",
+      "product_title": "Google Pixel 6",
+      "product_image": "https://example.com/images/pixel_6.jpg",
+      "category": "Phone",
+      "price": 699.99,
+      "description": "Google’s latest smartphone with advanced AI and excellent camera.",
+      "Specification": ["6.4-inch OLED", "Google Tensor", "128GB Storage", "5G"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "MAC001",
+      "product_title": "MacBook Air M1",
+      "product_image": "https://example.com/images/macbook_air_m1.jpg",
+      "category": "MacBook",
+      "price": 999.99,
+      "description": "Lightweight MacBook with Apple's powerful M1 chip.",
+      "Specification": ["13.3-inch Retina", "Apple M1", "8GB RAM", "256GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "MAC002",
+      "product_title": "MacBook Pro 16",
+      "product_image": "https://example.com/images/macbook_pro_16.jpg",
+      "category": "MacBook",
+      "price": 2399.99,
+      "description": "High-end MacBook with M1 Max for professional users.",
+      "Specification": ["16-inch Retina", "Apple M1 Max", "32GB RAM", "1TB SSD"],
+      "availability": false,
+      "rating": 4.9
+    },
+    {
+      "product_id": "ACC001",
+      "product_title": "Apple AirPods Pro",
+      "product_image": "https://example.com/images/airpods_pro.jpg",
+      "category": "Accessory",
+      "price": 249.99,
+      "description": "Wireless earbuds with noise cancellation.",
+      "Specification": ["Active Noise Cancellation", "Bluetooth 5.0", "24-hour Battery Life"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "ACC002",
+      "product_title": "Samsung Galaxy Buds Pro",
+      "product_image": "https://example.com/images/galaxy_buds_pro.jpg",
+      "category": "Accessory",
+      "price": 199.99,
+      "description": "High-quality wireless earbuds with excellent sound.",
+      "Specification": ["Active Noise Cancellation", "Bluetooth 5.0", "28-hour Battery Life"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "SW001",
+      "product_title": "Apple Watch Series 7",
+      "product_image": "https://example.com/images/apple_watch_series_7.jpg",
+      "category": "Smart Watch",
+      "price": 399.99,
+      "description": "The latest Apple Watch with larger display and health features.",
+      "Specification": ["Always-On Retina Display", "GPS", "Blood Oxygen Monitoring"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "SW002",
+      "product_title": "Samsung Galaxy Watch 4",
+      "product_image": "https://example.com/images/galaxy_watch_4.jpg",
+      "category": "Smart Watch",
+      "price": 299.99,
+      "description": "A smartwatch with fitness tracking and Wear OS.",
+      "Specification": ["1.4-inch AMOLED", "GPS", "Heart Rate Monitor", "Wear OS"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "LAP004",
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "product_image": "https://example.com/images/thinkpad_x1.jpg",
+      "category": "Laptop",
+      "price": 1599.99,
+      "description": "Business laptop with durability and performance.",
+      "Specification": ["14-inch FHD", "Intel i7", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "PH004",
+      "product_title": "OnePlus 9 Pro",
+      "product_image": "https://example.com/images/oneplus_9_pro.jpg",
+      "category": "Phone",
+      "price": 969.99,
+      "description": "Flagship killer with a fast and fluid display.",
+      "Specification": ["6.7-inch AMOLED", "Snapdragon 888", "256GB Storage", "5G"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "PH005",
+      "product_title": "Xiaomi Mi 11 Ultra",
+      "product_image": "https://example.com/images/mi_11_ultra.jpg",
+      "category": "Phone",
+      "price": 749.99,
+      "description": "High-end phone with impressive camera and display.",
+      "Specification": ["6.81-inch AMOLED", "Snapdragon 888", "256GB Storage", "5G"],
+      "availability": false,
+      "rating": 4.6
+    },
+    {
+      "product_id": "ACC003",
+      "product_title": "Anker PowerCore 10000",
+      "product_image": "https://example.com/images/powercore_10000.jpg",
+      "category": "Accessory",
+      "price": 29.99,
+      "description": "Compact and fast charging power bank.",
+      "Specification": ["10,000mAh", "18W Output", "USB-A & USB-C Ports"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "ACC004",
+      "product_title": "Belkin BoostCharge Pro",
+      "product_image": "https://example.com/images/boostcharge_pro.jpg",
+      "category": "Accessory",
+      "price": 39.99,
+      "description": "Fast wireless charging stand for iPhone.",
+      "Specification": ["15W Output", "MagSafe Compatible"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "SW003",
+      "product_title": "Fitbit Versa 3",
+      "product_image": "https://example.com/images/fitbit_versa_3.jpg",
+      "category": "Smart Watch",
+      "price": 229.99,
+      "description": "Smartwatch focused on health and fitness.",
+      "Specification": ["GPS", "Heart Rate Monitor", "6+ Day Battery Life"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "MAC003",
+      "product_title": "MacBook Pro 13 M2",
+      "product_image": "https://example.com/images/macbook_pro_13_m2.jpg",
+      "category": "MacBook",
+      "price": 1299.99,
+      "description": "High-performance MacBook with the M2 chip.",
+      "Specification": ["13.3-inch Retina", "Apple M2", "8GB RAM", "256GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "SW004",
+      "product_title": "Garmin Fenix 6 Pro",
+      "product_image": "https://example.com/images/garmin_fenix_6_pro.jpg",
+      "category": "Smart Watch",
+      "price": 499.99,
+      "description": "Outdoor smartwatch with advanced tracking features.",
+      "Specification": ["GPS", "Heart Rate", "Maps & Music"],
+      "availability": false,
+      "rating": 4.9
+    }
+  ]
+  

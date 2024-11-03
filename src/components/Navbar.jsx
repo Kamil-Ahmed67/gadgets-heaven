@@ -43,12 +43,12 @@ const Navbar = () => {
                 <div className="w-10 h-10 p-2 bg-white rounded-full text-lg font-semibold flex items-center justify-center">
                     <NavLink>
                         <TiShoppingCart></TiShoppingCart>
-                    </NavLink>
+                        </NavLink>
                 </div>
                 <div className="w-10 h-10 p-2 bg-white rounded-full text-lg font-semibold flex items-center justify-center">
                     <NavLink>
                         <CiHeart></CiHeart>
-                    </NavLink>
+                        </NavLink> 
                 </div>
             </div>
         </div>
