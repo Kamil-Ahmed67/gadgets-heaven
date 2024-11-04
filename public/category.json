@@ -1,0 +1,335 @@
+[
+    {
+      "product_id": "LAP001",
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/GR4dbZj/1-Dell-XPS-9380-Full-Review.jpg",
+      "category": "Laptop",
+      "price": 1299.99,
+      "description": "Powerful ultrabook with a stunning display and long battery life.",
+      "Specification": ["13.4-inch FHD+", "Intel i7", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "LAP002",
+      "product_title": "Apple MacBook Pro 14",
+      "product_image": "https://i.ibb.co.com/WcgVMyQ/2-macbook-pro-14-display-5.jpg",
+      "category": "MacBook",
+      "price": 1999.99,
+      "description": "Professional-grade performance with the M1 Pro chip.",
+      "Specification": ["14-inch Retina", "Apple M1 Pro", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "LAP003",
+      "product_title": "HP Spectre x360",
+      "product_image": "https://i.ibb.co.com/qWKzFr2/3-FYA8-1200-80.jpg",
+      "category": "Laptop",
+      "price": 1499.99,
+      "description": "2-in-1 convertible laptop with premium build and AMOLED display.",
+      "Specification": ["13.5-inch AMOLED", "Intel i7", "16GB RAM", "1TB SSD"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "PH001",
+      "product_title": "iPhone 13 Pro",
+      "product_image": "https://i.ibb.co.com/brsxw9V/4-istockphoto-1357129021-612x612.jpg",
+      "category": "iPhone",
+      "price": 999.99,
+      "description": "High-performance smartphone with A15 Bionic chip.",
+      "Specification": ["6.1-inch OLED", "A15 Bionic", "128GB Storage", "5G"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": "PH002",
+      "product_title": "Samsung Galaxy S21",
+      "product_image": "https://i.ibb.co.com/2kfWMFq/5-Samsung-Galaxys215g.jpg",
+      "category": "Phone",
+      "price": 799.99,
+      "description": "Flagship Android phone with a stunning display and powerful camera.",
+      "Specification": ["6.2-inch AMOLED", "Snapdragon 888", "128GB Storage", "5G"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "PH003",
+      "product_title": "Google Pixel 6",
+      "product_image": "https://i.ibb.co.com/ZJX7Mc4/6-Pixel-6-wide.jpg",
+      "category": "Phone",
+      "price": 699.99,
+      "description": "Google’s latest smartphone with advanced AI and excellent camera.",
+      "Specification": ["6.4-inch OLED", "Google Tensor", "128GB Storage", "5G"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "MAC001",
+      "product_title": "MacBook Air M1",
+      "product_image": "https://i.ibb.co.com/ZJSSy8Z/7-Mac-Book-Air-Geekbench-xl-xl.jpg",
+      "category": "MacBook",
+      "price": 999.99,
+      "description": "Lightweight MacBook with Apple's powerful M1 chip.",
+      "Specification": ["13.3-inch Retina", "Apple M1", "8GB RAM", "256GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "MAC002",
+      "product_title": "MacBook Pro 16",
+      "product_image": "https://i.ibb.co.com/ZW4cjp4/8-vpavic-191118-3800-0122.jpg",
+      "category": "MacBook",
+      "price": 2399.99,
+      "description": "High-end MacBook with M1 Max for professional users.",
+      "Specification": ["16-inch Retina", "Apple M1 Max", "32GB RAM", "1TB SSD"],
+      "availability": false,
+      "rating": 4.9
+    },
+    {
+      "product_id": "ACC001",
+      "product_title": "Apple AirPods Pro",
+      "product_image": "https://i.ibb.co.com/gywkpqp/9-Apple-Air-Pods-Pro-2nd-gen-hero-220907-big-jpg-large.jpg",
+      "category": "Accessory",
+      "price": 249.99,
+      "description": "Wireless earbuds with noise cancellation.",
+      "Specification": ["Active Noise Cancellation", "Bluetooth 5.0", "24-hour Battery Life"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "ACC002",
+      "product_title": "Samsung Galaxy Buds Pro",
+      "product_image": "https://i.ibb.co.com/ygL5Ntn/10-Galaxy-Buds-Pro-PR-main1.jpg",
+      "category": "Accessory",
+      "price": 199.99,
+      "description": "High-quality wireless earbuds with excellent sound.",
+      "Specification": ["Active Noise Cancellation", "Bluetooth 5.0", "28-hour Battery Life"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": "SW001",
+      "product_title": "Apple Watch Series 7",
+      "product_image": "https://i.ibb.co.com/fxvwnWJ/11-Apple-watch-series7-availability-hero-10052021-big-jpg-large.jpg",
+      "category": "Smart Watch",
+      "price": 399.99,
+      "description": "The latest Apple Watch with larger display and health features.",
+      "Specification": ["Always-On Retina Display", "GPS", "Blood Oxygen Monitoring"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "SW002",
+      "product_title": "Samsung Galaxy Watch 4",
+      "product_image": "https://i.ibb.co.com/RPF8rww/12-Galaxy-Watch4-main1.jpg",
+      "category": "Smart Watch",
+      "price": 299.99,
+      "description": "A smartwatch with fitness tracking and Wear OS.",
+      "Specification": ["1.4-inch AMOLED", "GPS", "Heart Rate Monitor", "Wear OS"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "LAP004",
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "product_image": "https://i.ibb.co.com/yRFysk6/13-15a4-41ca-ac05-bd0af4ae8c00.jpg",
+      "category": "Laptop",
+      "price": 1599.99,
+      "description": "Business laptop with durability and performance.",
+      "Specification": ["14-inch FHD", "Intel i7", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "PH004",
+      "product_title": "OnePlus 9 Pro",
+      "product_image": "https://i.ibb.co.com/w4GxCwQ/14-oneplus-9-series-header-2-scaled.jpg",
+      "category": "Phone",
+      "price": 969.99,
+      "description": "Flagship killer with a fast and fluid display.",
+      "Specification": ["6.7-inch AMOLED", "Snapdragon 888", "256GB Storage", "5G"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "PH005",
+      "product_title": "Xiaomi Mi 11 Ultra",
+      "product_image": "https://i.ibb.co.com/C1qwLN3/15-Xiaomi-Mi-11-Ultra-Review-001.jpg",
+      "category": "Phone",
+      "price": 749.99,
+      "description": "High-end phone with impressive camera and display.",
+      "Specification": ["6.81-inch AMOLED", "Snapdragon 888", "256GB Storage", "5G"],
+      "availability": false,
+      "rating": 4.6
+    },
+    {
+      "product_id": "ACC003",
+      "product_title": "Anker PowerCore 10000",
+      "product_image": "https://i.ibb.co.com/bRZmztv/16-anker-portable-charger-737-power-bank.jpg",
+      "category": "Accessory",
+      "price": 29.99,
+      "description": "Compact and fast charging power bank.",
+      "Specification": ["10,000mAh", "18W Output", "USB-A & USB-C Ports"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "ACC004",
+      "product_title": "Belkin BoostCharge Pro",
+      "product_image": "https://i.ibb.co.com/QFkYdDm/17-elkin-boost-charge-pro-3-in-1-wireless-charger-with-magsafe-1.jpg",
+      "category": "Accessory",
+      "price": 39.99,
+      "description": "Fast wireless charging stand for iPhone.",
+      "Specification": ["15W Output", "MagSafe Compatible"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": "SW003",
+      "product_title": "Fitbit Versa 3",
+      "product_image": "https://i.ibb.co.com/yV6fyGN/18-s-l1200.jpg",
+      "category": "Smart Watch",
+      "price": 229.99,
+      "description": "Smartwatch focused on health and fitness.",
+      "Specification": ["GPS", "Heart Rate Monitor", "6+ Day Battery Life"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": "MAC003",
+      "product_title": "MacBook Pro 13 M2",
+      "product_image": "https://i.ibb.co.com/khrQJQD/19-scale-size-760x427-v1657726621.jpg",
+      "category": "MacBook",
+      "price": 1299.99,
+      "description": "High-performance MacBook with the M2 chip.",
+      "Specification": ["13.3-inch Retina", "Apple M2", "8GB RAM", "256GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": "SW004",
+      "product_title": "Garmin Fenix 6 Pro",
+      "product_image": "https://i.ibb.co.com/HPrf3Z3/20-Garmin-Fenix-7-review-Sapphire-Solar-vs-Garmin-Fenix-6-Pro-scaled.jpg",
+      "category": "Smart Watch",
+      "price": 499.99,
+      "description": "Outdoor smartwatch with advanced tracking features.",
+      "Specification": ["GPS", "Heart Rate", "Maps & Music"],
+      "availability": false,
+      "rating": 4.9
+    },
+    {
+        "product_id": "LAP005",
+        "product_title": "Acer Swift 3",
+        "product_image": "  https://i.ibb.co.com/3h9r7D3/21-Acer-Swift3-SF314-42.jpg",
+        "category": "Laptop",
+        "price": 749.99,
+        "description": "Lightweight laptop with fast performance and long battery life.",
+        "Specification": ["14-inch FHD", "AMD Ryzen 7", "8GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "LAP006",
+        "product_title": "Asus ROG Zephyrus G14",
+        "product_image": "  https://i.ibb.co.com/pb0PPMV/22-Asus.jpg",
+        "category": "Laptop",
+        "price": 1499.99,
+        "description": "Powerful gaming laptop with compact design.",
+        "Specification": ["14-inch QHD", "AMD Ryzen 9", "16GB RAM", "1TB SSD"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "LAP007",
+        "product_title": "Microsoft Surface Laptop 4",
+        "product_image": "https://i.ibb.co.com/mhLhVqQ/23-Microsoft-Surface-Laptop-4.jpg",
+        "category": "Laptop",
+        "price": 1299.99,
+        "description": "Sleek and versatile laptop with touch display.",
+        "Specification": ["13.5-inch PixelSense", "Intel i5", "8GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "LAP008",
+        "product_title": "Razer Blade 15",
+        "product_image": "  https://i.ibb.co.com/Wfm7VbD/24-Razer-Blade-15-Studio-Edition.jpg",
+        "category": "Laptop",
+        "price": 1799.99,
+        "description": "High-performance gaming laptop with RGB keyboard.",
+        "Specification": ["15.6-inch FHD", "Intel i7", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "LAP009",
+        "product_title": "Lenovo Yoga 9i",
+        "product_image": "https://i.ibb.co.com/547H7S3/25-intel-core-12th-gen-MP78p-Rb-MTu.jpg",
+        "category": "Laptop",
+        "price": 1399.99,
+        "description": "2-in-1 laptop with premium build quality and 4K display.",
+        "Specification": ["14-inch UHD", "Intel i7", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "LAP010",
+        "product_title": "Dell Inspiron 15",
+        "product_image": "  https://i.ibb.co.com/4W2rKSZ/26-Dell.jpg",
+        "category": "Laptop",
+        "price": 649.99,
+        "description": "Affordable and reliable laptop for everyday tasks.",
+        "Specification": ["15.6-inch FHD", "Intel i5", "8GB RAM", "256GB SSD"],
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "product_id": "PH006",
+        "product_title": "Sony Xperia 1 III",
+        "product_image": " https://i.ibb.co.com/gJkwj11/27-sony-xperia-tgdd-1-2-3thumb-1280x720-800-resize.jpg",
+        "category": "Phone",
+        "price": 1199.99,
+        "description": "Flagship phone with 4K HDR OLED display and professional-grade camera.",
+        "Specification": ["6.5-inch 4K OLED", "Snapdragon 888", "256GB Storage", "5G"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "PH007",
+        "product_title": "Oppo Find X3 Pro",
+        "product_image": "  https://i.ibb.co.com/QKg2JFq/28-Oppo-Find-X3-Pro-featured-image.jpg",
+        "category": "Phone",
+        "price": 1099.99,
+        "description": "Premium phone with an immersive display and innovative camera.",
+        "Specification": ["6.7-inch AMOLED", "Snapdragon 888", "256GB Storage", "5G"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "PH008",
+        "product_title": "Vivo X70 Pro+",
+        "product_image": " https://i.ibb.co.com/Yhqzbqj/29-Vivo-X70-Pro-Plus-1024x576.jpg",
+        "category": "Phone",
+        "price": 899.99,
+        "description": "High-end smartphone with Zeiss optics and powerful performance.",
+        "Specification": ["6.78-inch AMOLED", "Snapdragon 888+", "256GB Storage", "5G"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "PH009",
+        "product_title": "Realme GT Pro 5G",
+        "product_image": "  https://i.ibb.co.com/D8fg761/30-realme-GT-2-Pro-White-1164.jpg",
+        "category": "Phone",
+        "price": 799.99,
+        "description": "Affordable flagship with great performance and fast charging.",
+        "Specification": ["6.6-inch AMOLED", "Snapdragon 888", "128GB Storage", "5G"],
+        "availability": true,
+        "rating": 4.5
+      }
+  ]
+
+
+ 

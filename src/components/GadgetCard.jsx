@@ -9,9 +9,9 @@ const GadgetCard = ({ gadget }) => {
             </figure>
             <div className="card-body">
                 <h2 className="text-base lg:text-lg font-semibold lg:font-bold text-gray-900">{product_title}</h2>
-                <p className="text">Price:{price}k</p>
+                <p className="text-base text-gray-600">Price:{price}k</p>
                 <div className="card-actions justify-start">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button className="btn bg-white text-purple-600 border-2 border-purple-600 rounded-3xl hover:text-purple-600">View Details</button>
                 </div>
             </div>
         </div>

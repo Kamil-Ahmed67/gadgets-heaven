@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className="bg-slate-100">
             {/* Navbar */}
             <div className="px-8 pt-4">
             <Navbar></Navbar>
