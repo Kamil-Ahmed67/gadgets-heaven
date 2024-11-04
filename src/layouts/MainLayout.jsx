@@ -10,7 +10,7 @@ const MainLayout = () => {
             <Navbar></Navbar>
             </div >
             {/* Dynamic Content */}
-            <div className="min-h-[calc(500vh-300px)] ">
+            <div>
                 <Outlet></Outlet>
             </div>
             {/* Footer */}
@@ -20,3 +20,4 @@ const MainLayout = () => {
 };
 
 export default MainLayout;
+//className="min-h-[calc(500vh-300px)] "

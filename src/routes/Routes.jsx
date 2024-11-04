@@ -5,6 +5,7 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
+import GadgetCards from "../components/GadgetCards";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -13,6 +14,13 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
+                children:[
+                    {
+                        path:"/",
+                        element:<GadgetCards></GadgetCards>,
+                        loader:()=>fetch('../gadgets.json')
+                    }
+                ]
             },
             {
                 path: "/statistics",

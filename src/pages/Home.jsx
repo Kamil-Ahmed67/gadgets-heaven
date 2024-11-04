@@ -1,5 +1,6 @@
+import { Outlet } from "react-router-dom";
 import Banner from "../components/Banner";
-//import Heading from "../components/Heading";
+import Heading from "../components/Heading";
 
 const Home = () => {
     return (
@@ -8,9 +9,10 @@ const Home = () => {
            <div className="px-8 mb-32">
            <Banner></Banner>
            </div>
-           {/* <div className="mt-32">
+           <div className="mt-32">
             <Heading></Heading>
-           </div> */}
+           </div>
+           <Outlet></Outlet>
         </div>
     );
 };
