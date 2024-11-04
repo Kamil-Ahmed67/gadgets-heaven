@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const GadgetCard = ({ gadget }) => {
     const{product_title,product_image,price}=gadget;
     return (
@@ -17,5 +19,7 @@ const GadgetCard = ({ gadget }) => {
         </div>
     );
 };
-
+GadgetCard.propTypes={
+    gadget:PropTypes.object.isRequired,
+}
 export default GadgetCard;

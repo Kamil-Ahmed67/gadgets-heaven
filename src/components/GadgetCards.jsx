@@ -19,7 +19,7 @@ const GadgetCards = () => {
      }, [cat, allData]);
 
     return (
-        <div className="flex flex-col md:flex-row gap-6 px-8 mt-8">
+        <div className="flex flex-col md:flex-row sm:items-center gap-6 px-8 mt-8">
             {/* Categories*/}
             <div className="w-1/4 max-w-[192px]">
                 <Categories />
