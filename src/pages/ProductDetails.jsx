@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
 import { CiHeart } from "react-icons/ci";
-import { NavLink, useLoaderData, useParams } from "react-router-dom";
+import { TiShoppingCart } from "react-icons/ti";
+import { NavLink, useLoaderData, useOutletContext, useParams } from "react-router-dom";
 
 const ProductDetails = () => {
     const { proId } = useParams();
     const allGadgetData = useLoaderData();
     const [gadget, setGadget] = useState({});
-
+    const { addToCart } = useOutletContext(); //add to the icon purpose
     useEffect(() => {
         const singleGadgetData = allGadgetData.find(item => item.product_id == proId);
         setGadget(singleGadgetData);
     }, [allGadgetData, proId]);
 
-    const { product_image, product_title, price, description, Specification, availability, rating } = gadget;
+    const {product_id, product_image, product_title, price, description, Specification, availability, rating } = gadget;
 
     return (
         <div className="relative">
@@ -67,9 +68,11 @@ const ProductDetails = () => {
                         {/* Add to Cart Button */}
                         <div className="flex gap-4 items-center">
                             <div>
-                                <button className="bg-purple-600 text-white py-2 px-4 rounded-3xl font-semibold hover:bg-purple-700 flex items-center space-x-2">
-                                    <span>Add To Cart</span>
+                                <NavLink to={`/cart/${product_id}`}>
+                                <button onClick={addToCart} className="bg-purple-600 text-white py-2 px-4 rounded-3xl font-semibold hover:bg-purple-700 flex items-center space-x-2">
+                                    <span className="flex items-center gap-2 ">Add To Cart<TiShoppingCart className="text-xl"></TiShoppingCart></span> 
                                 </button>
+                                </NavLink>
                             </div>
                             <div className="border-2 border-gray-400  rounded-full p-2">
                                 <NavLink>
