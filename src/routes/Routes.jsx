@@ -7,6 +7,7 @@ import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
 import GadgetCards from "../components/GadgetCards";
 import Categories from "../components/Categories";
+import ProductDetails from "../pages/ProductDetails";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
             {
                 path: "/dashboard",
                 element: <Dashboard></Dashboard>,
+            },
+            {
+                path: "/gadget/:proId",
+                element:<ProductDetails></ProductDetails>,
+                loader:()=>fetch('../gadgets.json'),
             }
         ]
     },
