@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import toast from "react-hot-toast";
 import { TiDeleteOutline } from "react-icons/ti";
 
 const Cart = () => {
@@ -26,6 +27,7 @@ const Cart = () => {
         setSelectedGadgets(updatedGadgets);
         localStorage.setItem("addedProduct", JSON.stringify(updatedGadgets));
         calculateTotalCost(updatedGadgets);
+        toast.success('Successfully Removed!')
     };
 
     // Sort items by price

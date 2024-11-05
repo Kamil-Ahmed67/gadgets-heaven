@@ -1,10 +1,14 @@
 import toast from "react-hot-toast";
-
-// Get all products from local storage
 const getAllProduct = () => {
-    const all = localStorage.getItem('addedProduct');
-    return all ? JSON.parse(all) : [];
-};
+    const all = localStorage.getItem('addedProduct')
+  
+    if (all) {
+      const products = JSON.parse(all)
+      return products
+    } else {
+      return []
+    }
+  }
 
 // Add a product to local storage
 const addSelectedProduct = (product) => {
@@ -21,4 +25,4 @@ const addSelectedProduct = (product) => {
     toast.success("Added to cart successfully!");
 };
 
-export { addSelectedProduct, getAllProduct };
+export { addSelectedProduct, getAllProduct};
