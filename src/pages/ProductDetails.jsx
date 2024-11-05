@@ -2,19 +2,21 @@ import { useEffect, useState } from "react";
 import { CiHeart } from "react-icons/ci";
 import { TiShoppingCart } from "react-icons/ti";
 import { NavLink, useLoaderData, useParams } from "react-router-dom";
-import { addSelectedProduct} from "../utils";
+import { addSelectedProduct, addWishedProduct } from "../utils";
 
 const ProductDetails = () => {
     const { proId } = useParams();
     const allGadgetData = useLoaderData();
     const [gadget, setGadget] = useState({});
-    
+
     useEffect(() => {
         const singleGadgetData = allGadgetData.find(item => item.product_id == proId);
         setGadget(singleGadgetData);
     }, [allGadgetData, proId]);
-    const {product_image, product_title, price, description, Specification, availability, rating } = gadget;
-
+    const { product_image, product_title, price, description, Specification, availability, rating } = gadget;
+    const handleAddToCart = () => {
+        addSelectedProduct(gadget); // Saving product to localStorage
+    };
     return (
         <div className="relative">
             <div className="bg-purple-600  pb-10">
@@ -41,42 +43,45 @@ const ProductDetails = () => {
                         <p className={`text-sm font-medium ${availability ? "text-green-600" : "text-red-600"}`}>
                             {availability ? "In Stock" : "Out of Stock"}
                         </p>
-                        <p className="text-gray-600">{description}</p>
+                        <p className="text-gray-600 text-sm">{description}</p>
                         <div>
                             <h4 className="font-semibold">Specification:</h4>
                             <ul className="list-decimal ml-5 space-y-1">
                                 {Specification?.map((item, index) => (
-                                    <li key={index} className="text-gray-600">{item}</li>
+                                    <li key={index} className="text-gray-600 text-sm">{item}</li>
                                 ))}
                             </ul>
                         </div>
                         {/* Rating */}
-                        <div className="flex items-center">
-                            <div className="rating mr-3">
-                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                <input
-                                    type="radio"
-                                    name="rating-2"
-                                    className="mask mask-star-2 bg-orange-400"
-                                    defaultChecked />
-                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
-                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
-                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                        <div>
+                            <h4 className="font-semibold">Ratings</h4>
+                            <div className="flex items-center">
+                                <div className="rating mr-3">
+                                    <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                    <input
+                                        type="radio"
+                                        name="rating-2"
+                                        className="mask mask-star-2 bg-orange-400"
+                                        defaultChecked />
+                                    <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+                                    <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+                                    <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div> <p className="text-gray-600 font-medium">{rating}</p></div>
                             </div>
-                           <div> <p className="text-gray-600 font-medium">{rating}</p></div>
                         </div>
                         {/* Add to Cart Button */}
                         <div className="flex gap-4 items-center">
                             <div>
                                 <NavLink>
-                                <button onClick={() => addSelectedProduct(gadget)} className="bg-purple-600 text-white py-2 px-4 rounded-3xl font-semibold hover:bg-purple-700 flex items-center space-x-2">
-                                    <span className="flex items-center gap-2 ">Add To Cart<TiShoppingCart className="text-xl"></TiShoppingCart></span> 
-                                </button>
+                                    <button onClick={handleAddToCart} className="bg-purple-600 text-white py-2 px-4 rounded-3xl font-semibold hover:bg-purple-700 flex items-center space-x-2">
+                                        <span className="flex items-center gap-2 ">Add To Cart<TiShoppingCart className="text-xl"></TiShoppingCart></span>
+                                    </button>
                                 </NavLink>
                             </div>
                             <div className="border-2 border-gray-400  rounded-full p-2">
                                 <NavLink>
-                                    <CiHeart className="text-xl semibold"></CiHeart>
+                                    <CiHeart onClick={() => addWishedProduct(gadget)} className="text-xl semibold"></CiHeart>
                                 </NavLink>
                             </div>
                         </div>
