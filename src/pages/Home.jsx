@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Banner from "../components/Banner";
 import Heading from "../components/Heading";
 const Home = () => {
-    // const catData=useLoaderData();
+    // const gadgetData=useLoaderData();
     return (
         <div>
             {/* Banner Section */}

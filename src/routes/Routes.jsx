@@ -8,6 +8,7 @@ import Dashboard from "../pages/Dashboard";
 import GadgetCards from "../components/GadgetCards";
 import Categories from "../components/Categories";
 import ProductDetails from "../pages/ProductDetails";
+import Cart from "../components/Cart";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
                 path: "/gadget/:proId",
                 element:<ProductDetails></ProductDetails>,
                 loader:()=>fetch('../gadgets.json'),
+            },
+            {
+                path: "/cart",
+                element:<Cart></Cart>,
             }
         ]
     },

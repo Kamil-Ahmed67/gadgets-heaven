@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 const MainLayout = () => {
     const [cart, setCart] = useState([]);
@@ -20,9 +21,11 @@ const MainLayout = () => {
             </div>
             {/* Footer */}
             <Footer></Footer>
+            <Toaster></Toaster>
         </div>
     );
 };
 
 export default MainLayout;
 //className="min-h-[calc(500vh-300px)] "
+//npm install react-hot-toast

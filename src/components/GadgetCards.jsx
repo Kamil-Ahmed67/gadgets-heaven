@@ -17,6 +17,7 @@ const GadgetCards = () => {
             setGadgets(allData.slice(0, 6));
         }
     }, [cat, allData]);
+    
 
     return (
         <div>

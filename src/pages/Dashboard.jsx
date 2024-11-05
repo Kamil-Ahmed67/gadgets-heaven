@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Cart from "../components/Cart";
+import Wishlist from "../components/Wishlist";
 
 const Dashboard = () => {
     const [isActive, setIsActive] = useState({
@@ -48,11 +49,15 @@ const Dashboard = () => {
                 </div>
 
             </div>
-           <div>
-            {
-                
-            }
-           </div>
+            <div>
+                {isActive.card ?(
+                        <Cart></Cart>
+                    ):
+                    (
+                    <Wishlist></Wishlist>
+                )     
+                }
+            </div>
         </div>
     );
 };
