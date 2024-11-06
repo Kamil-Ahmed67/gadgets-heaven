@@ -21,13 +21,10 @@ const GadgetCards = () => {
 
     return (
         <div>
-            {/* Heading Section */}
-            <div className="mt-40">
-                <h1 className="text-2xl text-center font-bold text-gray-900 mt-24">
+            {/* Cards Section */}
+            <h1 className="text-2xl text-center font-bold text-gray-900 mt-24 mb-8">
                     Explore Cutting-Edge Gadgets
                 </h1>
-            </div>
-            {/* Cards Section */}
             <div className="flex flex-col md:flex-row gap-6 px-4 md:px-8 mt-4">
                 <div className="w-full md:w-1/4 max-w-[192px]">
                     <Categories></Categories>

@@ -1,15 +1,14 @@
-import { Outlet } from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import Banner from "../components/Banner";
 import Heading from "../components/Heading";
 const Home = () => {
-    // const gadgetData=useLoaderData();
     return (
         <div>
             {/* Banner Section */}
             <div className="px-8 mb-32">
                 <Banner></Banner>
             </div>
-            <div className="mt-32">
+            <div>
                 <Heading></Heading>
             </div>
             <Outlet></Outlet>

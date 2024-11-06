@@ -9,6 +9,7 @@ import GadgetCards from "../components/GadgetCards";
 import Categories from "../components/Categories";
 import ProductDetails from "../pages/ProductDetails";
 import Cart from "../components/Cart";
+import Contact from "../pages/Contact";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
             {
                 path: "/cart",
                 element:<Cart></Cart>,
+            },
+            {
+                path: "/contact",
+                element:<Contact></Contact>,
             }
         ]
     },

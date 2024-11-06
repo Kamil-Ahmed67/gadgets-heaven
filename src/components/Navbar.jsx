@@ -1,9 +1,8 @@
-import PropTypes from "prop-types";
 import { CiHeart } from "react-icons/ci";
 import { TiShoppingCart } from "react-icons/ti";
 import { NavLink, useLocation } from "react-router-dom";
 
-const Navbar = ({ cartCount }) => {
+const Navbar = () => {
     const location = useLocation();
     return (
         <div className={`navbar pb-3 ${location.pathname === "/" ? "bg-purple-600" : "bg-slate-100"} rounded-t-xl px-2 md:px-6`}>
@@ -16,6 +15,7 @@ const Navbar = ({ cartCount }) => {
                         <NavLink to="/">Home</NavLink>
                         <NavLink to="/statistics">Statistics</NavLink>
                         <NavLink to="/dashboard">Dashboard</NavLink>
+                        <NavLink to="/contact">Contact</NavLink>
                     </ul>
                 </div>
                 <a className={`text-base md:text-lg lg:text-xl  font-bold ${location.pathname==="/"?"text-white":"text-gray-900"}`}>Gadget Heaven</a>
@@ -25,20 +25,17 @@ const Navbar = ({ cartCount }) => {
                     <NavLink to="/" className={`text-sm hover:scale-105 font-semibold ${location.pathname==="/"?"text-white hover:text-gray-300":"text-black hover:text-purple-600"}`}>Home</NavLink>
                     <NavLink to="/dashboard" className={`text-sm hover:scale-105 font-semibold ${location.pathname==="/"?"text-white hover:text-gray-300":"text-black hover:text-purple-600"}`}>Dashboard</NavLink>
                     <NavLink to="/statistics" className={`text-sm hover:scale-105 font-semibold ${location.pathname==="/"?"text-white hover:text-gray-300":"text-black hover:text-purple-600"}`}>Statistics</NavLink>
-                    <NavLink to="/extra" className={`text-sm hover:scale-105 font-semibold ${location.pathname==="/"?"text-white hover:text-gray-300":"text-black hover:text-purple-600"}`}>Extra</NavLink>
+                    <NavLink to="/contact" className={`text-sm hover:scale-105 font-semibold ${location.pathname==="/"?"text-white hover:text-gray-300":"text-black hover:text-purple-600"}`}>Contact</NavLink>
                 </ul>
             </div>
             <div className="navbar-end text-black space-x-2">
                 <div className="relative w-10 h-10 p-2 bg-white rounded-full text-lg font-semibold flex items-center justify-center">
                     <NavLink to="/dashboard">
                         <TiShoppingCart />
-                        {cartCount > 0 && (
-                            <span className="absolute top-0 right-0 bg-red-600 text-white text-xs rounded-full px-1 ">{cartCount}</span>
-                        )}
                     </NavLink>
                 </div>
                 <div className="w-10 h-10 p-2 bg-white rounded-full text-lg font-semibold flex items-center justify-center">
-                    <NavLink>
+                    <NavLink to="/dashboard">
                         <CiHeart />
                     </NavLink>
                 </div>
@@ -46,7 +43,4 @@ const Navbar = ({ cartCount }) => {
         </div>
     );
 };
-Navbar.propTypes={
-    cartCount:PropTypes.object.isRequired
-}
 export default Navbar

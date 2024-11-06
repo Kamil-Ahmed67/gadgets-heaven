@@ -8,22 +8,27 @@ const ProductDetails = () => {
     const { proId } = useParams();
     const allGadgetData = useLoaderData();
     const [gadget, setGadget] = useState({});
+    const [isWished, setIsWished] = useState(false);
 
     useEffect(() => {
         const singleGadgetData = allGadgetData.find(item => item.product_id == proId);
         setGadget(singleGadgetData);
     }, [allGadgetData, proId]);
+
     const { product_image, product_title, price, description, Specification, availability, rating } = gadget;
+
     const handleAddToCart = () => {
         addSelectedProduct(gadget); // Add product to cart
     };
 
     const handleAddToWish = () => {
         addWishedProduct(gadget); // Add product to wishlist
+        setIsWished(true); 
     };
+
     return (
         <div className="relative">
-            <div className="bg-purple-600  pb-10">
+            <div className="bg-purple-600 pb-10">
                 <div className="text-center pt-8 lg:pt-10 px-8 md:px-16 lg:px-28 pb-8 lg:pb-16">
                     <h1 className="text-xl md:text-2xl lg:text-3xl text-white font-bold leading-tight mb-4">
                         Product Details
@@ -44,9 +49,10 @@ const ProductDetails = () => {
                     <div className="w-full md:w-1/2 space-y-4">
                         <h3 className="text-2xl font-bold">{product_title}</h3>
                         <p className="text-xl font-semibold text-gray-700">Price: ${price}</p>
-                        <p className={`text-sm font-medium ${availability ? "text-green-600" : "text-red-600"}`}>
+                        <p className={`text-sm font-medium w-[100px] text-center border-2 px-3 py-1 rounded-full ${availability ? "text-green-600 bg-green-100 border-green-600" : "text-red-600 border-red-600 w-[130px] bg-red-100"}`}>
                             {availability ? "In Stock" : "Out of Stock"}
                         </p>
+
                         <p className="text-gray-600 text-sm">{description}</p>
                         <div>
                             <h4 className="font-semibold">Specification:</h4>
@@ -62,16 +68,12 @@ const ProductDetails = () => {
                             <div className="flex items-center">
                                 <div className="rating mr-3">
                                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
-                                    <input
-                                        type="radio"
-                                        name="rating-2"
-                                        className="mask mask-star-2 bg-orange-400"
-                                        defaultChecked />
+                                    <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
                                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
                                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
                                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <div> <p className="text-gray-600 font-medium">{rating}</p></div>
+                                <div><p className="text-gray-600 font-medium">{rating}</p></div>
                             </div>
                         </div>
                         {/* Add to Cart Button */}
@@ -79,13 +81,16 @@ const ProductDetails = () => {
                             <div>
                                 <NavLink>
                                     <button onClick={handleAddToCart} className="bg-purple-600 text-white py-2 px-4 rounded-3xl font-semibold hover:bg-purple-700 flex items-center space-x-2">
-                                        <span className="flex items-center gap-2 ">Add To Cart<TiShoppingCart className="text-xl"></TiShoppingCart></span>
+                                        <span className="flex items-center gap-2">Add To Cart <TiShoppingCart className="text-xl" /></span>
                                     </button>
                                 </NavLink>
                             </div>
                             <div className="border-2 border-gray-400  rounded-full p-2">
                                 <NavLink>
-                                    <CiHeart onClick={handleAddToWish} className="text-xl semibold"></CiHeart>
+                                    <CiHeart onClick={handleAddToWish} disabled={isWished}
+                                    className={`text-xl font-semibold ${isWished ? "text-red-500 cursor-not-allowed" : "text-gray-600 hover:text-red-500"}`}
+                                    style={{ cursor: isWished ? 'not-allowed' : 'pointer' }}
+                                    ></CiHeart>
                                 </NavLink>
                             </div>
                         </div>
@@ -98,5 +103,3 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
-//const {addSelectedProduct}=useOutletContext //add to the icon purpose
-//useOutletContext,

@@ -1,43 +1,93 @@
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 const Categories = () => {
     return (
         <div>
             {/* Category Section */}
             <div className="px-4 py-5 border-2 rounded-xl bg-white">
-                <div className="grid grid-cols-1 gap-y-4 gap-2 md:grid-cols-2 lg:grid-cols-1">
+                <div className="grid grid-cols-1 gap-y-4">
                     <div>
-                        <NavLink to="/">
-                            <button className="w-full bg-gray-200 px-3 py-1.5 rounded-3xl text-left">All Product</button>
+                        <NavLink 
+                            to="/" 
+                            className={({ isActive }) =>
+                                isActive 
+                                    ? "flex justify-center items-center w-full bg-purple-500 text-white px-3 py-1.5 rounded-3xl" 
+                                    : "flex justify-center items-center w-full bg-gray-200 text-gray-700 px-3 py-1.5 rounded-3xl"
+                            }
+                        >
+                            All Product
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to="/category/Laptop">
-                            <button className="w-full bg-gray-200 px-3 py-1.5 rounded-3xl text-left">Laptops</button>
+                        <NavLink 
+                            to="/category/Laptop" 
+                            className={({ isActive }) =>
+                                isActive 
+                                    ? "flex justify-center items-center w-full bg-purple-500 text-white px-3 py-1.5 rounded-3xl" 
+                                    : "flex justify-center items-center w-full bg-gray-200 text-gray-700 px-3 py-1.5 rounded-3xl"
+                            }
+                        >
+                            Laptops
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to={`/category/Phone`}>
-                            <button className="w-full bg-gray-200 px-3 py-1.5 rounded-3xl text-left">Phones</button>
+                        <NavLink 
+                            to="/category/Phone" 
+                            className={({ isActive }) =>
+                                isActive 
+                                    ? "flex justify-center items-center w-full bg-purple-500 text-white px-3 py-1.5 rounded-3xl" 
+                                    : "flex justify-center items-center w-full bg-gray-200 text-gray-700 px-3 py-1.5 rounded-3xl"
+                            }
+                        >
+                            Phones
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to="/category/Accessory">
-                            <button className="w-full bg-gray-200 px-3 py-1.5 rounded-3xl text-left">Accessories</button>
+                        <NavLink 
+                            to="/category/Accessory" 
+                            className={({ isActive }) =>
+                                isActive 
+                                    ? "flex justify-center items-center w-full bg-purple-500 text-white px-3 py-1.5 rounded-3xl" 
+                                    : "flex justify-center items-center w-full bg-gray-200 text-gray-700 px-3 py-1.5 rounded-3xl"
+                            }
+                        >
+                            Accessories
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to="/category/Smart Watch">
-                            <button className="w-full bg-gray-200 px-3 py-1.5 rounded-3xl text-left">Smart Watches</button>
+                        <NavLink 
+                            to="/category/Smart Watch" 
+                            className={({ isActive }) =>
+                                isActive 
+                                    ? "flex justify-center items-center w-full bg-purple-500 text-white px-3 py-1.5 rounded-3xl" 
+                                    : "flex justify-center items-center w-full bg-gray-200 text-gray-700 px-3 py-1.5 rounded-3xl"
+                            }
+                        >
+                            Smart Watches
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to="/category/MacBook">
-                            <button className="w-full bg-gray-200 px-3 py-1.5 rounded-3xl text-left">MacBook</button>
+                        <NavLink 
+                            to="/category/MacBook" 
+                            className={({ isActive }) =>
+                                isActive 
+                                    ? "flex justify-center items-center w-full bg-purple-500 text-white px-3 py-1.5 rounded-3xl" 
+                                    : "flex justify-center items-center w-full bg-gray-200 text-gray-700 px-3 py-1.5 rounded-3xl"
+                            }
+                        >
+                            MacBook
                         </NavLink>
                     </div>
                     <div>
-                        <NavLink to="/category/iPhone">
-                            <button className="w-full bg-gray-200 px-3 py-1.5 rounded-3xl text-left">iPhone</button>
+                        <NavLink 
+                            to="/category/iPhone" 
+                            className={({ isActive }) =>
+                                isActive 
+                                    ? "flex justify-center items-center w-full bg-purple-500 text-white px-3 py-1.5 rounded-3xl" 
+                                    : "flex justify-center items-center w-full bg-gray-200 text-gray-700 px-3 py-1.5 rounded-3xl"
+                            }
+                        >
+                            iPhone
                         </NavLink>
                     </div>
                 </div>
@@ -45,38 +95,5 @@ const Categories = () => {
         </div>
     );
 };
+
 export default Categories;
-// import { NavLink } from "react-router-dom";
-
-// const Categories = ({allData}) => {
-//   return (
-//         <div>
-//             {/* Category Section */}
-//             <div className="px-4 py-5 border-2 rounded-xl bg-white">
-//                 <div className="grid grid-cols-1 gap-y-4 gap-2 md:grid-cols-2 lg:grid-cols-1">
-//                     {/* All Products Button */}
-//                     <div>
-//                         <NavLink to="/">
-//                             <button className="w-full bg-gray-200 px-3 py-1.5 rounded-3xl text-left">
-//                                 All Products
-//                             </button>
-//                         </NavLink>
-//                     </div>
-
-//                     {/* Dynamic Category Buttons */}
-//                     {allData.map(category => (
-//                         <div key={category}>
-//                             <NavLink to={`/category/${category}`}>
-//                                 <button className="w-full bg-gray-200 px-3 py-1.5 rounded-3xl text-left">
-//                                     {category}
-//                                 </button>
-//                             </NavLink>
-//                         </div>
-//                     ))}
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Categories;

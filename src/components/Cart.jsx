@@ -60,7 +60,7 @@ const Cart = () => {
                 <div><h1 className="text-3xl font-bold mb-6">Cart</h1></div>
                 <div className="flex items-center gap-4">
                     <h2 className="text-xl font-semibold">Total cost: ${totalCost}</h2>
-                    <button onClick={sortByPrice} className="bg-gray-200 flex items-center gap-2 p-2 rounded-md font-medium text-gray-600 hover:bg-gray-300">
+                    <button onClick={sortByPrice} className="bg-white border-2 border-purple-600 text-lg rounded-xl flex items-center gap-2 p-2 font-medium text-gray-600 hover:bg-purple-100">
                         <span>Sort by Price</span> <PiSlidersBold />
                     </button>
                     <button 
@@ -68,7 +68,7 @@ const Cart = () => {
                         disabled={selectedGadgets.length === 0} 
                         className={`${
                             selectedGadgets.length === 0 ? 'bg-gray-400 cursor-not-allowed' : 'bg-gradient-to-r from-purple-700 via-pink-600 to-purple-700'
-                        } text-white px-4 py-2 rounded-md font-semibold hover:bg-purple-700`}
+                        } text-white text-lg px-4 py-2 rounded-xl font-semibold hover:bg-purple-600`}
                     >
                         Purchase
                     </button>

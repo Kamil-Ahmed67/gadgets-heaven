@@ -6,6 +6,7 @@ const Footer = () => {
                     <h3 className="text-2xl md:text-3xl text-center font-bold text-gray-900">Gadget Heaven</h3>
                     <p className="text-sm md:text-base text-center text-gray-600">Leading the way in cutting-edge technology and innovation.</p>
                 </div>
+                <div className="divider"></div>
                 <div className="md:flex space-y-4 justify-between mt-10 ">
                     {/* Column-1 */}
                     <div className="flex flex-col">
