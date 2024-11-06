@@ -10,10 +10,12 @@ import Categories from "../components/Categories";
 import ProductDetails from "../pages/ProductDetails";
 import Cart from "../components/Cart";
 import Contact from "../pages/Contact";
+import Error from "../components/Error";
 const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
+        errorElement:<Error></Error>,
         children: [
             {
                 path: "/",

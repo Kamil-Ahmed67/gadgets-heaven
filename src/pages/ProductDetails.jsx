@@ -3,6 +3,7 @@ import { CiHeart } from "react-icons/ci";
 import { TiShoppingCart } from "react-icons/ti";
 import { NavLink, useLoaderData, useParams } from "react-router-dom";
 import { addSelectedProduct, addWishedProduct } from "../utils";
+import { Helmet } from "react-helmet-async";
 
 const ProductDetails = () => {
     const { proId } = useParams();
@@ -28,6 +29,9 @@ const ProductDetails = () => {
 
     return (
         <div className="relative">
+            <Helmet>
+                <title>Product Details- Gadget Heaven</title>
+            </Helmet>
             <div className="bg-purple-600 pb-10">
                 <div className="text-center pt-8 lg:pt-10 px-8 md:px-16 lg:px-28 pb-8 lg:pb-16">
                     <h1 className="text-xl md:text-2xl lg:text-3xl text-white font-bold leading-tight mb-4">

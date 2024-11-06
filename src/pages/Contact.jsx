@@ -3,10 +3,14 @@ import slider from '../assets/slider.jpg';
 import support from '../assets/Product-consulting works.jpg'
 import delivery from '../assets/fast-delivery-graphic-768x516.png'
 import customer from '../assets/Support-scaled.jpg'
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
     return (
         <div>
+            <Helmet>
+                <title>Contact Us-Gadget Heaven</title>
+            </Helmet>
             {/* Dashboard Banner */}
             <div>
                 <div className="relative">
