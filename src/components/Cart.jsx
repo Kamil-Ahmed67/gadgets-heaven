@@ -2,12 +2,16 @@ import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import { TiDeleteOutline } from "react-icons/ti";
 import { getAllProduct } from "../utils";
-import { NavLink } from "react-router-dom";
+import modalImage from '../assets/Group.png'
+import {useNavigate } from "react-router-dom";
 import { PiSlidersBold } from "react-icons/pi";
 
 const Cart = () => {
     const [selectedGadgets, setSelectedGadgets] = useState([]);
     const [totalCost, setTotalCost] = useState(0);
+    const [showModal, setShowModal] = useState(false);
+    const [displayTotalCost, setDisplayTotalCost] = useState(0); // New state for displaying total cost in modal
+    const navigate = useNavigate();
 
     useEffect(() => {
         const savedGadgets = localStorage.getItem("addedProduct");
@@ -18,13 +22,11 @@ const Cart = () => {
         }
     }, []);
 
-    // Calculate total cost
     const calculateTotalCost = (gadgets) => {
         const total = gadgets.reduce((sum, item) => sum + item.price, 0);
         setTotalCost(total.toFixed(2));
     };
 
-    // Remove item from cart
     const removeItem = (id) => {
         const products = getAllProduct();
         const remaining = products.filter(product => product.product_id !== id);
@@ -34,10 +36,22 @@ const Cart = () => {
         toast.success('Successfully Removed!');
     };
 
-    // Sort items by price
     const sortByPrice = () => {
         const sortedGadgets = [...selectedGadgets].sort((a, b) => a.price - b.price);
         setSelectedGadgets(sortedGadgets);
+    };
+
+    const handlePurchase = () => {
+        setDisplayTotalCost(totalCost);
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+        setSelectedGadgets([]); 
+        setTotalCost(0); 
+        localStorage.removeItem("addedProduct");
+        navigate('/');
     };
 
     return (
@@ -47,14 +61,17 @@ const Cart = () => {
                 <div className="flex items-center gap-4">
                     <h2 className="text-xl font-semibold">Total cost: ${totalCost}</h2>
                     <button onClick={sortByPrice} className="bg-gray-200 flex items-center gap-2 p-2 rounded-md font-medium text-gray-600 hover:bg-gray-300">
-                       <span> Sort by Price</span> <PiSlidersBold></PiSlidersBold>
+                        <span>Sort by Price</span> <PiSlidersBold />
                     </button>
-                    <NavLink to='/'>
-                        <button className="bg-gradient-to-r from-purple-700 via-pink-600 to-purple-700 text-white px-4 py-2 rounded-md font-semibold hover:bg-purple-700">
-                            Purchase
-                        </button>
-                    </NavLink>
-
+                    <button 
+                        onClick={handlePurchase} 
+                        disabled={selectedGadgets.length === 0} 
+                        className={`${
+                            selectedGadgets.length === 0 ? 'bg-gray-400 cursor-not-allowed' : 'bg-gradient-to-r from-purple-700 via-pink-600 to-purple-700'
+                        } text-white px-4 py-2 rounded-md font-semibold hover:bg-purple-700`}
+                    >
+                        Purchase
+                    </button>
                 </div>
             </div>
 
@@ -78,6 +95,22 @@ const Cart = () => {
                 </div>
             ) : (
                 <p className="text-gray-600 mt-6">No products in cart.</p>
+            )}
+            {/* Modal Section */}
+            {showModal && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="bg-white rounded-lg p-6 w-[90%] max-w-md">
+                    <div className="flex flex-col items-center text-center">
+                            <img src={modalImage} alt="Success Icon" className="h-14 w-16 mt-4 mb-4 text-white" />
+                        <h2 className="text-2xl font-bold mb-2">Payment Successfully</h2>
+                        <div className="divider"></div>
+                        <p className="text-gray-600">Thanks for purchasing.<br />Total: ${displayTotalCost}</p>
+                    </div>
+                    <button onClick={handleCloseModal} className="mt-6 w-full bg-gray-200 py-2 rounded-2xl font-semibold text-gray-700 hover:text-purple-700 hover:bg-gray-300">
+                        Close
+                    </button>
+                </div>
+            </div>            
             )}
         </div>
     );

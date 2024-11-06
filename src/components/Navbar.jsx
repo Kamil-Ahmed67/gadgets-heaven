@@ -6,7 +6,7 @@ import { NavLink, useLocation } from "react-router-dom";
 const Navbar = ({ cartCount }) => {
     const location = useLocation();
     return (
-        <div className={`navbar ${location.pathname === "/" ? "bg-purple-600" : "bg-slate-100"} rounded-t-xl px-2 md:px-6`}>
+        <div className={`navbar pb-3 ${location.pathname === "/" ? "bg-purple-600" : "bg-slate-100"} rounded-t-xl px-2 md:px-6`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
