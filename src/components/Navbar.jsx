@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 import { CiHeart } from "react-icons/ci";
 import { TiShoppingCart } from "react-icons/ti";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = ({ cartCount }) => {
+    const location = useLocation();
     return (
-        <div className="navbar bg-purple-600 rounded-t-xl px-2 md:px-6">
+        <div className={`navbar ${location.pathname === "/" ? "bg-purple-600" : "bg-slate-100"} rounded-t-xl px-2 md:px-6`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -17,14 +18,14 @@ const Navbar = ({ cartCount }) => {
                         <NavLink to="/dashboard">Dashboard</NavLink>
                     </ul>
                 </div>
-                <a className="text-base md:text-lg lg:text-xl text-white font-bold">Gadget Heaven</a>
+                <a className={`text-base md:text-lg lg:text-xl  font-bold ${location.pathname==="/"?"text-white":"text-gray-900"}`}>Gadget Heaven</a>
             </div>
             <div className="navbar-center hidden lg:flex justify-between">
                 <ul className="menu menu-horizontal px-1 gap-x-4">
-                    <NavLink to="/" className="text-sm text-white hover:text-gray-300 hover:scale-105">Home</NavLink>
-                    <NavLink to="/dashboard" className="text-sm text-white hover:text-gray-300 hover:scale-105">Dashboard</NavLink>
-                    <NavLink to="/statistics" className="text-sm text-white hover:text-gray-300 hover:scale-105">Statistics</NavLink>
-                    <NavLink to="/extra" className="text-sm text-white hover:text-gray-300 hover:scale-105">Extra</NavLink>
+                    <NavLink to="/" className={`text-sm hover:scale-105 font-semibold ${location.pathname==="/"?"text-white hover:text-gray-300":"text-black hover:text-purple-600"}`}>Home</NavLink>
+                    <NavLink to="/dashboard" className={`text-sm hover:scale-105 font-semibold ${location.pathname==="/"?"text-white hover:text-gray-300":"text-black hover:text-purple-600"}`}>Dashboard</NavLink>
+                    <NavLink to="/statistics" className={`text-sm hover:scale-105 font-semibold ${location.pathname==="/"?"text-white hover:text-gray-300":"text-black hover:text-purple-600"}`}>Statistics</NavLink>
+                    <NavLink to="/extra" className={`text-sm hover:scale-105 font-semibold ${location.pathname==="/"?"text-white hover:text-gray-300":"text-black hover:text-purple-600"}`}>Extra</NavLink>
                 </ul>
             </div>
             <div className="navbar-end text-black space-x-2">
