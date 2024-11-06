@@ -328,8 +328,52 @@
         "Specification": ["6.6-inch AMOLED", "Snapdragon 888", "128GB Storage", "5G"],
         "availability": true,
         "rating": 4.5
+      },
+      {
+        "product_id": "PH010",
+        "product_title": "iPhone 14 Pro",
+        "product_image": " https://i.ibb.co.com/WxrpyQ6/31-i-Phone-14-Pro-Max-hero-220907-Full-Bleed-Image-jpg-large.jpg",
+        "category": "iPhone",
+        "price": 1099.99,
+        "description": "The latest iPhone with Dynamic Island and A16 Bionic chip.",
+        "Specification": ["6.1-inch OLED", "A16 Bionic", "128GB Storage", "5G"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "PH011",
+        "product_title": "iPhone 13 Mini",
+        "product_image": " https://i.ibb.co.com/r0D4dvk/32-iphone-13-mini-cosmo-lead-1633002061.jpg",
+        "category": "iPhone",
+        "price": 699.99,
+        "description": "Compact iPhone with powerful performance and A15 Bionic chip.",
+        "Specification": ["5.4-inch OLED", "A15 Bionic", "128GB Storage", "5G"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "ACC005",
+        "product_title": "JBL Flip 5",
+        "product_image": "https://i.ibb.co.com/wcnrfJ9/33-07o-Tv-X6adb-R1-Ylx4l-Lb-MKJ5-1-fit-scale-size-760x427-v1573867106.jpg",
+        "category": "Accessory",
+        "price": 119.99,
+        "description": "Portable Bluetooth speaker with deep bass and waterproof design.",
+        "Specification": ["12-hour Battery Life", "IPX7 Waterproof", "Bluetooth 4.2"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "ACC006",
+        "product_title": "Bose QuietComfort 35 II",
+        "product_image": " https://i.ibb.co.com/gdDsKTF/34-71-W7-VDw-M7-IL-AC-UF1000-1000-QL80.jpg",
+        "category": "Accessory",
+        "price": 299.99,
+        "description": "Noise-canceling headphones with superior sound quality.",
+        "Specification": ["Bluetooth", "Noise Cancellation", "20-hour Battery Life"],
+        "availability": true,
+        "rating": 4.8
       }
   ]
-
-
+ 
+  
  

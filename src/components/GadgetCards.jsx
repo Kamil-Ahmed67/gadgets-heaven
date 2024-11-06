@@ -14,7 +14,7 @@ const GadgetCards = () => {
             setGadgets(filteredByCategory);
         }
         else {
-            setGadgets(allData.slice(0, 6));
+            setGadgets(allData.slice(0, 9));
         }
     }, [cat, allData]);
     
