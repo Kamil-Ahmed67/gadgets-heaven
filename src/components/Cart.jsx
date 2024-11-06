@@ -42,8 +42,8 @@ const Cart = () => {
 
     return (
         <div className="container mx-auto p-8">
-            <div className="flex justify-between items-center mb-4">
-                <div><h1 className="text-2xl font-bold mb-6">Cart</h1></div>
+            <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+                <div><h1 className="text-3xl font-bold mb-6">Cart</h1></div>
                 <div className="flex items-center gap-4">
                     <h2 className="text-xl font-semibold">Total cost: ${totalCost}</h2>
                     <button onClick={sortByPrice} className="bg-gray-200 flex items-center gap-2 p-2 rounded-md font-medium text-gray-600 hover:bg-gray-300">
@@ -63,7 +63,7 @@ const Cart = () => {
                     {selectedGadgets.map((product) => (
                         <div key={product.product_id} className="flex items-center justify-between p-4 border rounded-lg bg-gray-50 shadow-sm">
                             <div className="flex items-center">
-                                <img src={product.product_image} alt={product.product_title} className="w-20 h-20 rounded-lg mr-4" />
+                                <img src={product.product_image} alt={product.product_title} className="w-40 h-30 rounded-lg mr-4" />
                                 <div>
                                     <h3 className="text-lg font-bold">{product.product_title}</h3>
                                     <p className="text-sm text-gray-500">{product.description}</p>

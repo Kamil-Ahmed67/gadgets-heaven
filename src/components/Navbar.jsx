@@ -22,8 +22,8 @@ const Navbar = ({ cartCount }) => {
             <div className="navbar-center hidden lg:flex justify-between">
                 <ul className="menu menu-horizontal px-1 gap-x-4">
                     <NavLink to="/" className="text-sm text-white hover:text-gray-300 hover:scale-105">Home</NavLink>
-                    <NavLink to="/statistics" className="text-sm text-white hover:text-gray-300 hover:scale-105">Statistics</NavLink>
                     <NavLink to="/dashboard" className="text-sm text-white hover:text-gray-300 hover:scale-105">Dashboard</NavLink>
+                    <NavLink to="/statistics" className="text-sm text-white hover:text-gray-300 hover:scale-105">Statistics</NavLink>
                     <NavLink to="/extra" className="text-sm text-white hover:text-gray-300 hover:scale-105">Extra</NavLink>
                 </ul>
             </div>

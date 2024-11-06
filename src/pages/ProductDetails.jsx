@@ -15,7 +15,11 @@ const ProductDetails = () => {
     }, [allGadgetData, proId]);
     const { product_image, product_title, price, description, Specification, availability, rating } = gadget;
     const handleAddToCart = () => {
-        addSelectedProduct(gadget); // Saving product to localStorage
+        addSelectedProduct(gadget); // Add product to cart
+    };
+
+    const handleAddToWish = () => {
+        addWishedProduct(gadget); // Add product to wishlist
     };
     return (
         <div className="relative">
@@ -81,7 +85,7 @@ const ProductDetails = () => {
                             </div>
                             <div className="border-2 border-gray-400  rounded-full p-2">
                                 <NavLink>
-                                    <CiHeart onClick={() => addWishedProduct(gadget)} className="text-xl semibold"></CiHeart>
+                                    <CiHeart onClick={handleAddToWish} className="text-xl semibold"></CiHeart>
                                 </NavLink>
                             </div>
                         </div>
